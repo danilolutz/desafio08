@@ -159,7 +159,6 @@ describe('Cart Context', () => {
         <TestComponent />
       </CartProvider>,
     );
-
     await wait(() => expect(getByText('Test product')).toBeTruthy());
 
     expect(getByText('Test product')).toBeTruthy();
